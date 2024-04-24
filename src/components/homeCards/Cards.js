@@ -1,7 +1,24 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { cardproduct } from "../../static/Router";
 
 function Cards() {
+  let cardsitem = cardproduct?.map((el) => (
+    <div key={el.id} className="cards__bottom__card">
+      <img src={el.img} alt={el.title} />
+      <div className="card__content">
+        <h4>{el.title}</h4>
+        <div className="price__wrapper">
+          <p>{el.price}</p>
+          <del>{el.delprice}</del>
+        </div>
+        <div className="limits__wrapper">
+          <img src={el.stars} alt="" />
+          <p>{el.limit}</p>
+        </div>
+      </div>
+    </div>
+  ));
   return (
     <div className="cards">
       <div className="container">
@@ -16,22 +33,7 @@ function Cards() {
               <button className="cards__top__btn">wiew All</button>
             </div>
           </div>
-          <div className="cards__bottom">
-            <div className="cards__bottom__card">
-              <img src="" alt="" />
-              <div className="card__content">
-                <h4></h4>
-                <div className="price__wrapper">
-                  <p></p>
-                  <p></p>
-                </div>
-                <div className="limits__wrapper">
-                  <img src="" alt="" />
-                  <p></p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="cards__bottom">{cardsitem}</div>
         </div>
       </div>
     </div>
