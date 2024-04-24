@@ -5,7 +5,9 @@ import { cardproduct } from "../../static/Router";
 function Cards() {
   let cardsitem = cardproduct?.map((el) => (
     <div key={el.id} className="cards__bottom__card">
-      <img src={el.img} alt={el.title} />
+      <div className="cards__bottom__img__wrapper">
+        <img className="cards__bottom__img" src={el.img} alt={el.title} />
+      </div>
       <div className="card__content">
         <h4>{el.title}</h4>
         <div className="price__wrapper">

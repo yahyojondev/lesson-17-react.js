@@ -56,7 +56,7 @@
   width: 100%;
   height: 60px;
   display: flex;
-  //   background-color: red;
+  backdrop-filter: blur(5px);
   align-items: center;
   &__wrapper {
     display: flex;
