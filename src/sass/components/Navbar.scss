@@ -1,0 +1,135 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 2px 2px gray;
+}
+
+.navbartop {
+  display: flex;
+  align-items: center;
+  margin: auto 0;
+  width: 100%;
+  height: 50px;
+  background: rgb(0, 0, 0);
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 240px;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    a {
+      color: rgb(250, 250, 250);
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+  &__link {
+    display: flex;
+    text-decoration: underline;
+  }
+  select {
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: rgb(250, 250, 250);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+  }
+}
+
+.navbarbottom {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  //   background-color: red;
+  align-items: center;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      color: rgb(0, 0, 0);
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 3%;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      li {
+        a {
+          color: rgb(0, 0, 0);
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0%;
+          text-align: center;
+        }
+        .navbarbottom__link.active {
+          color: blue;
+          text-decoration: underline;
+          font-weight: 700;
+        }
+      }
+    }
+    .navbarbottom__right {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 245px;
+    border-radius: 4px;
+    background: rgb(245, 245, 245);
+    input {
+      border: none;
+      outline: none;
+      background: rgb(245, 245, 245);
+      color: rgb(0, 0, 0);
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0%;
+    }
+    input::placeholder {
+      color: rgb(0, 0, 0);
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0%;
+    }
+    svg {
+      font-size: 14px;
+    }
+  }
+  .navbarbottom__svg {
+    font-size: 35px;
+  }
+}
