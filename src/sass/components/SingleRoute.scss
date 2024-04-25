@@ -1,0 +1,208 @@
+.singleRoute {
+  padding: 200px 0px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    gap: 200px;
+    &__left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .img__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        img {
+          width: 121px;
+          height: 114px;
+          border-radius: 4px;
+          background: rgb(245, 245, 245);
+          object-fit: contain;
+        }
+      }
+      .singleRoute__left__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        width: 500px;
+        height: 500px;
+        border-radius: 4px;
+        background: rgb(245, 245, 245);
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .stars__limits__wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      p {
+        color: gray;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0%;
+      }
+      span {
+        color: rgb(0, 255, 102);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0%;
+      }
+    }
+    .price__wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      p,
+      del {
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 3%;
+      }
+      del {
+        color: gray;
+      }
+    }
+    .single__discription {
+      width: 373px;
+      color: rgb(0, 0, 0);
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0%;
+    }
+    .line {
+      width: 400px;
+    }
+    .colors__wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .checkbox__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p {
+          color: rgb(0, 0, 0);
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: 3%;
+        }
+        span {
+          background-color: red;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+        }
+        .span1 {
+          background-color: blue;
+        }
+      }
+    }
+    .size__wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      p {
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 3%;
+      }
+      .sizes {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid gray;
+          border-radius: 2px;
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+    .buy__wrapper {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .inc__dec {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 90px;
+        justify-content: space-between;
+        button {
+          padding: 10px;
+          background: rgb(219, 68, 68);
+          color: white;
+        }
+      }
+      .but__btn {
+        padding: 12px 48px;
+        border-radius: 4px;
+        color: rgb(250, 250, 250);
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0%;
+        background: rgb(219, 68, 68);
+      }
+      .like__svg {
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        color: gray;
+        padding: 5px;
+      }
+    }
+    .delivery__wrapper {
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      width: 399px;
+      height: 180px;
+      box-sizing: border-box;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+      .delivery__top {
+        svg {
+          font-size: 30px;
+        }
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 0;
+      }
+      div {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

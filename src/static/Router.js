@@ -2,6 +2,7 @@ import Home from "../pages/home/Home";
 import Contact from "../pages/contact/Contact";
 import About from "../pages/about/About";
 import SignUp from "../pages/signup/SignUp";
+import Wishlist from "../pages/wishlist/Wishlist";
 
 import cardimg1 from "../assets/images/cardimg1.png";
 import cardimg2 from "../assets/images/cardimg2.png";
@@ -35,6 +36,12 @@ export const Routers = [
     title: "SignUp",
     element: <SignUp />,
   },
+  {
+    id: 5,
+    path: "/wishlist",
+    title: "Wishlist",
+    element: <Wishlist />,
+  },
 ];
 
 export const cardproduct = [
@@ -48,7 +55,7 @@ export const cardproduct = [
     limit: "(65)",
   },
   {
-    id: 2,
+    id: 1,
     img: cardimg2,
     title: "Gucci duffle bag",
     price: "$960",
@@ -72,5 +79,12 @@ export const cardproduct = [
     price: "$360",
     stars: stars1,
     limit: "(65)",
+  },
+];
+
+export const starproduct = [
+  {
+    id: 1,
+    star: stars1,
   },
 ];

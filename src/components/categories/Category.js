@@ -28,7 +28,7 @@ function Category() {
                 <span>Seconds</span>
               </li>
             </ul>
-            <NavLink className="category__link__btn"></NavLink>
+            <NavLink className="category__link__btn">Buy Now</NavLink>
           </div>
           <img src={categoryimg} alt="" className="category__right__img" />
         </div>

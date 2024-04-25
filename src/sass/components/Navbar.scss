@@ -1,5 +1,6 @@
 .navbar {
   position: fixed;
+  z-index: 999;
   width: 100%;
   box-shadow: 0px 0px 2px 2px gray;
 }
@@ -56,13 +57,14 @@
   width: 100%;
   height: 60px;
   display: flex;
-  backdrop-filter: blur(5px);
+  // backdrop-filter: blur(5px);
+  background-color: #fff;
   align-items: center;
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    h3 {
+    .navbarbottom__logotext {
       color: rgb(0, 0, 0);
       font-family: Poppins;
       font-size: 24px;
@@ -102,8 +104,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 10px;
-    width: 100%;
-    max-width: 245px;
+    // width: 100%;
+    width: 245px;
     border-radius: 4px;
     background: rgb(245, 245, 245);
     input {
@@ -129,7 +131,35 @@
       font-size: 14px;
     }
   }
-  .navbarbottom__svg {
-    font-size: 35px;
+  a {
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
   }
+}
+.wishlist__link {
+  position: relative;
+  span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    // padding: 2px;
+    width: 15px;
+    height: 15px;
+    grid-row-end: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    justify-content: center;
+    background-color: red;
+    color: white;
+  }
+}
+.navbarbottom__svg {
+  font-size: 22px;
 }
