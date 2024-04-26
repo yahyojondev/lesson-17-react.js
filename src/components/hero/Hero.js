@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import { ImAppleinc } from "react-icons/im";
 import { FaArrowRight } from "react-icons/fa6";
 import heroimg from "../../assets/images/herobg.png";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 function Hero() {
   return (

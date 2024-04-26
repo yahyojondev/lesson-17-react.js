@@ -31,7 +31,7 @@ button {
 }
 
 @import "./components/Navbar.scss";
-@import "./components/Footer.scss";
+@import "./components/footer.scss";
 @import "./pages/About.scss";
 @import "./pages/Home.scss";
 @import "./pages/SignUp.scss";
@@ -42,3 +42,5 @@ button {
 @import "./components/Products.scss";
 @import "./components/footer.scss";
 @import "./components/SingleRoute.scss";
+@import "./pages/Cart.scss";
+@import "./pages/checkOut.scss";

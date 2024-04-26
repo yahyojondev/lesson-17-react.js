@@ -3,6 +3,7 @@ import Contact from "../pages/contact/Contact";
 import About from "../pages/about/About";
 import SignUp from "../pages/signup/SignUp";
 import Wishlist from "../pages/wishlist/Wishlist";
+import Cart from "../pages/cart/Cart";
 
 import cardimg1 from "../assets/images/cardimg1.png";
 import cardimg2 from "../assets/images/cardimg2.png";
@@ -41,6 +42,12 @@ export const Routers = [
     path: "/wishlist",
     title: "Wishlist",
     element: <Wishlist />,
+  },
+  {
+    id: 6,
+    path: "/cart",
+    title: "cart",
+    element: <Cart />,
   },
 ];
 

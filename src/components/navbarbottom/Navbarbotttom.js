@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 
 function Navbarbotttom() {
   const wishes = useSelector((state) => state.wishlist.value).length;
+  const cart = useSelector((state) => state.cart.value).length;
 
   let navbarbottomitem = Routers?.map((el) => (
     <li key={el.id} className="navbarbottom__item">
@@ -32,8 +33,9 @@ function Navbarbotttom() {
               <FaRegHeart className="navbarbottom__svg" />
               <span>{wishes}</span>
             </NavLink>
-            <NavLink>
+            <NavLink to={"/cart"} className="wishlist__link">
               <PiShoppingCart className="navbarbottom__svg" />
+              <span>{cart}</span>
             </NavLink>
           </div>
         </div>

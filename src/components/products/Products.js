@@ -5,6 +5,7 @@ import { FaRegHeart, FaRegEye, FaHeart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleToWishes } from "../../context/wishlistSlice";
+import { addToCart } from "../../context/cartSlice";
 
 function Products({ data, title }) {
   const wishes = useSelector((state) => state.wishlist.value);
@@ -23,7 +24,7 @@ function Products({ data, title }) {
           <FaRegEye />
         </div>
         <div className="add__card">
-          <p>Add To Cart</p>
+          <button onClick={() => dispatch(addToCart(el))}>Add To Cart</button>
         </div>
       </div>
       <div className="card__content">
